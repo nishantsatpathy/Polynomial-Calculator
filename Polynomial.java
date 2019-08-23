@@ -155,7 +155,7 @@ public class Polynomial extends JPanel implements ActionListener { //beginning o
                         }
                         else if (t3.getText().equals("")) {
                             x.exponentiation(Integer.parseInt(t4.getText()), temp);
-                            t5.setText("The resultant polynomia; is: " + x.toString() + "\n");
+                            t5.setText("The resultant polynomial is: " + x.toString() + "\n");
                         }
                         else {   
                             double val = x.evaluate(Double.parseDouble(t3.getText()));
