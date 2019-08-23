@@ -28,18 +28,10 @@ public class Term { //beginning of Term class
     public String toString() { //start of toString method
         String term; //initializes the string term
         switch (exponent) { //creates switch cases for the exponent of the monomial
-            case 0: //case for when exponent is zero
-                switch (coefficient) { //switch case for the value of the coefficient 
-                    case 1: 
-                        term = "1";
-                        return term;
-                    case -1:
-                        term = "-1";
-                        return term;
-                    default:
-                        term = String.valueOf(coefficient);
-                        return term;
-                }         
+            case 0: //case for when exponent is zero 
+                term = String.valueOf(coefficient);
+                return term;
+                         
             case 1: //case for when the exponent is one     
                 switch (coefficient) { //switch case for coefficient
                     case 1:
@@ -61,7 +53,7 @@ public class Term { //beginning of Term class
                         term = "-x" + "^" + String.valueOf(exponent);
                         return term;
                     default:
-                        term = String.valueOf(coefficient + "x" + "^" + String.valueOf(exponent));
+                        term = String.valueOf(coefficient) + "x" + "^" + String.valueOf(exponent);
                         return term;
                 }   
         }     
